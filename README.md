@@ -9,7 +9,7 @@ Welcome to **Cawfee**, a retro-pixel styled interactive coffee recipe website de
 
 ## 🌐 Live Demo
 
-🔗 *[View Website on GitHub Pages](https://PiyushSakhuja.github.io/cawfee/)*  
+🔗 *[View Website on GitHub Pages](https://github.com/PiyushSakhuja/CawFee)*  
 
 
 ---
