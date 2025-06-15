@@ -3,14 +3,14 @@
 Welcome to **Cawfee**, a retro-pixel styled interactive coffee recipe website designed to simulate a cozy, lo-fi café experience. Select your favorite coffee type — **Whipped**, **Iced**, or **Latte** — and follow easy step-by-step brewing instructions, all while relaxing to ambient café music.
 
 ![Preview Banner](https://media.tenor.com/ncPUIWl7EtcAAAAi/coffee.gif)
-)
+
 
 ---
 
 ## 🌐 Live Demo
 
-🔗 **[View Website on GitHub Pages](https://PiyushSakhuja.github.io/cawfee/)**  
-*(Replace `PiyushSakhuja` with your GitHub username after pushing the project)*
+🔗 *[View Website on GitHub Pages](https://PiyushSakhuja.github.io/cawfee/)*  
+
 
 ---
 
