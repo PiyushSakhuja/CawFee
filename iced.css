@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Press Start 2P", system-ui;
+}
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: #F8D299;
+  color: #3E2723;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+input#un-mute {
+  display: none;
+}
+
+.unmute img {
+  display: none;
+}
+
+input#un-mute:checked~.unmute img {
+  display: initial;
+}
+
+input#un-mute:checked~.mute img {
+  display: none;
+}
+
+.mute-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 999; /* Ensures it stays on top */
+}
+
+
+.mute-button img {
+  height: 8vh;
+
+
+}
+
+.recipe-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gif-container video {
+  width: 70vh;
+
+}
+
+.ingredients-box {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  background-color: rgba(255, 243, 227, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #4B2E2B;
+}
+
+.steps-box {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  background-color: rgba(255, 243, 227, 0.9);
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #4B2E2B;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.step-controls {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.step-controls button {
+  background-color: #6D4C41;
+  color: #fff3e3;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #4B2E2B;
+  transition: background-color 0.3s;
+}
+
+.step-controls button:hover {
+  background-color: #4E342E;
+}

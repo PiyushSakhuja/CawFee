@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Press Start 2P", system-ui;
+}
+
+
+
+.video-bg-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #4B2E2B, #B8865D);
+  font-family: 'Courier New', monospace;
+  color: #3E2723;
+
+}
+
+.coffee-options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.coffee-options a {
+  text-align: center;
+  text-decoration: none;
+  color: #4B2E1E;
+  font-family: "Press Start 2P", monospace;
+  transition: transform 0.2s ease;
+}
+
+.coffee-options a:hover {
+  transform: scale(1.1);
+}
+
+.coffee-options img {
+  width: 100px;
+  image-rendering: pixelated;
+}
+
+input#un-mute {
+  display: none;
+}
+
+.unmute img {
+  display: none;
+}
+
+input#un-mute:checked~.unmute img {
+  display: initial;
+}
+
+input#un-mute:checked~.mute img {
+  display: none;
+}
+
+
+
+.mute-button img {
+  height: 8vh;
+  filter: invert();
+
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}

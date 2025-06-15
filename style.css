@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Press Start 2P", system-ui;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.video-bg-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#bgVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Changed from 'cover' to 'contain' */
+  z-index: -1;
+  background-color: #000; /* optional: to fill black bars */
+  image-rendering: pixelated;
+}
+
+
+/* Optional: content overlay */
+/* .overlay-content {
+     display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50vh;
+}
+.overlay-content h1 {
+     
+} */
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: #D2691E; 
+  text-shadow: 2px 2px 0 #4B2E1E, 0 0 10px #fff2e1;
+}
+
+.overlay-content h1 {
+  font-family: "Press Start 2P", monospace;
+  font-size: 40px;
+  background: linear-gradient(90deg, #d2691e, #b85c2e, #d2691e);
+  background-size: 200% auto;
+  
+  /* Compatibility */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  color: transparent;
+
+  animation: shine 3s linear infinite;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0 #4B2E1E, 0 0 15px #fff2e1;
+}
+
+
+/* Button Styling */
+.overlay-content button {
+  font-family: "Press Start 2P", monospace;
+  font-size: 12px;
+  padding: 12px 24px;
+  border: 2px solid #4B2E1E;
+  background-color: #4B2E1E;
+  color: #fff2e1;
+  cursor: pointer;
+  box-shadow: 0 0 8px #fff2e1;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay-content button:hover {
+  background-color: #b85c2e;
+  box-shadow: 0 0 12px #fff2e1, 0 0 24px #4B2E1E;
+}
+
+/* Shine animation */
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+input#un-mute {
+  display: none;
+}
+
+.unmute img {
+  display: none;
+}
+
+input#un-mute:checked ~ .unmute img {
+  display: initial;
+}
+
+input#un-mute:checked ~ .mute img {
+  display: none;
+}
+
+
+
+.mute-button img{
+    height: 8vh;
+    filter: invert();
+   
+}
+
+
+@keyframes fadeOutScale {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+
+.fade-out {
+  animation: fadeOutScale 1s ease forwards;
+}
+
+.overlay-content button:active {
+  transform: scale(0.95);
+}
+
+
+

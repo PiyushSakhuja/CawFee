@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cawfee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="video-bg-container">
+        <div class="mute-button">
+            <input type="checkbox" name="un-mute" id="un-mute">
+            <label for="un-mute" class="unmute">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/Mute_Icon.svg" alt="Mute_Icon.svg"
+                    title="Mute icon">
+            </label>
+            <label for="un-mute" class="mute">
+                <img src="http://upload.wikimedia.org/wikipedia/commons/2/21/Speaker_Icon.svg" alt="Speaker_Icon.svg"
+                    title="Unmute/speaker icon">
+            </label>
+        </div>
+        <video autoplay muted loop playsinline id="bgVideo">
+            <source src="assets/bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay-content">
+            <h1>Cozy Coffee Corner</h1>
+            <button>Start Brewing</button>
+        </div>
+    </div>
+    <audio id="bgMusic" src="audio/little_cafe.wav" loop autoplay></audio>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

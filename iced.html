@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cawfee</title>
+    <link rel="stylesheet" href="whipped.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="mute-button">
+        <input type="checkbox" name="un-mute" id="un-mute">
+        <label for="un-mute" class="unmute">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/Mute_Icon.svg" alt="Mute_Icon.svg"
+                title="Mute icon">
+        </label>
+        <label for="un-mute" class="mute">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/2/21/Speaker_Icon.svg" alt="Speaker_Icon.svg"
+                title="Unmute/speaker icon">
+        </label>
+    </div>
+
+    <div class="recipe-container">
+        <audio id="bgMusic" src="audio/little_cafe.wav" loop autoplay></audio>
+
+       
+        <div class="gif-container">
+            <video src="assets/i7p0qzcdpa5e1.mp4" autoplay loop muted></video>
+        </div>
+
+       
+        <div class="ingredients-box">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 cup freshly brewed coffee (or 1 tbsp instant coffee + 1 cup hot water)</li>
+                <li>1–2 tsp sugar (adjust to taste)</li>
+                <li>½ cup milk (cold or room temperature)</li>
+               <ul>
+                <li>A dash of vanilla extract</li>
+                <li>Whipped cream or chocolate syrup (for topping)</li>
+               </ul>
+            </ul>
+        </div>
+
+        
+        <div class="steps-box">
+            <h2>Steps</h2>
+            <div id="step-text" class="fade-in">Step will appear here</div>
+            <div class="step-controls">
+                <button onclick="prevStep()">⟵ Previous</button>
+                <button onclick="nextStep()">Next ⟶</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="bg-music.js"></script>
+    <script src="whipped.js"></script>
+</body>
+
+</html>
